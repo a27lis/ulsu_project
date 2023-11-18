@@ -16,6 +16,11 @@
   padding: 20px 140px 0px 140px;
 }
 
+.footer {
+  height: 618px;
+  padding: 140px 140px 80px 140px;
+}
+
 .container {
   background-color: #f7ede8;
   margin-top: 40px;
@@ -178,4 +183,38 @@
 }
 .links-cards {
   padding-top: 100px;
+  margin-bottom: 100px;
+}
+.second-row {
+  margin-top: 80px;
+}
+
+.first-col {
+  margin-left: 190px;
+}
+
+.second-col {
+  margin-left: -150px;
+}
+.year {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+
+.nav-item {
+  margin-bottom: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
+
+.coloured {
+  color: #cd4631;
 }
