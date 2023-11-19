@@ -21,6 +21,13 @@
   padding: 140px 140px 80px 140px;
 }
 
+.history {
+  height: 1414px;
+}
+.info {
+  padding: 80px 140px 80px 140px;
+}
+
 .container {
   background-color: #f7ede8;
   margin-top: 40px;
@@ -32,6 +39,9 @@
   font-weight: 700;
   margin-right: 60px;
   font-size: 16;
+}
+.dev {
+  padding: 0px 140px 0px 140px;
 }
 
 .dropdown-item {
@@ -76,6 +86,19 @@
   margin-top: -70px;
   margin-right: 20px;
 }
+
+.sparkle-left {
+  position: absolute;
+  margin-top: -115px;
+  margin-left: 440px;
+}
+
+.scribble-blue {
+  position: absolute;
+  right: 0;
+  margin-right: 460px;
+  margin-top: -150px;
+}
 .title-topics {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
@@ -83,6 +106,23 @@
   color: black;
   text-align: center;
   margin-top: 140px;
+}
+
+.title-history {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  color: black;
+  text-align: center;
+  margin-top: 70px;
+}
+.title-f {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  color: black;
+  text-align: center;
+  margin-top: 70px;
 }
 .title-topics-desc {
   font-family: "Montserrat Alternates", sans-serif;
@@ -217,4 +257,88 @@
 
 .coloured {
   color: #cd4631;
+}
+.pro {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+}
+.your-eng {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  color: #cd4631;
+}
+.abs {
+  position: absolute;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.on-pages {
+  margin-right: 80px;
+}
+.history-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card-f {
+  padding: 80px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.dark-shadow {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0);
+}
+
+.found {
+  height: 520px;
+  width: 570px;
+  padding: 16px;
+}
+
+.card-body-f {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.face {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.text-name {
+  line-height: 1;
+  margin-top: 250px;
+  font-weight: 700;
+  font-size: 36.65px;
+}
+.card-text-f {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+
+.follow-me {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #4d4d4d;
+  margin-left: -95px;
+}
+.row-abs {
+  position: absolute;
+  right: 0;
+}
+.tt {
+  margin-left: -35px;
+  margin-top: -12px;
+}
+.inst {
+  margin-left: -35px;
+  margin-top: -12px;
 }
