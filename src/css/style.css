@@ -9,6 +9,18 @@
   height: 1456px;
   padding: 0px 140px 0px 140px;
 }
+.topics-list {
+  height: 1019px;
+  padding: 100px 140px 0px 140px;
+  display: flex;
+  justify-content: center;
+}
+.grammar {
+  height: 239px;
+  padding: 140px 140px 0px 140px;
+  display: flex;
+  justify-content: center;
+}
 
 .links {
   height: 1153px;
@@ -341,4 +353,29 @@
 .inst {
   margin-left: -35px;
   margin-top: -12px;
+}
+
+.topic-info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-topic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 36.65px;
+  width: 686px;
+  margin-bottom: 24px;
+}
+
+.topic-el {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 686px;
+  margin-bottom: 5px;
+}
+
+.ul-topics {
+  list-style-type: none;
 }
