@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="css/style-remake.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="navigation">
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+        <ul class="menu">
+          <li><a class="menu-item">Главная</a></li>
+
+          <li><a class="menu-item" href="">О нас</a></li>
+          <li>
+            <a class="menu-item lessons" style="cursor: default">Уроки</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <img
+                class="arrow-down"
+                src="icons/ic-arrow-down.svg"
+                alt="arrow"
+                onclick="myFunction()"
+              />
+              <div id="dropdown-content" class="dropdown-content">
+                <ul class="dropdown-menu">
+                  <li class="dr-li">
+                    <a class="menu-item dropdown-item" href="#">Тексты</a>
+                  </li>
+                  <hr />
+                  <li class="dr-li">
+                    <a class="menu-item dropdown-item" href="#">Грамматика</a>
+                  </li>
+                  <hr />
+                  <li class="dr-li">
+                    <a class="menu-item dropdown-item" href="#">Говорение</a>
+                  </li>
+                  <hr />
+                  <li class="dr-li">
+                    <a class="menu-item dropdown-item" href="#">Игра</a>
+                  </li>
+                  <hr />
+                  <li class="dr-li">
+                    <a class="menu-item dropdown-item" href="#">Времена</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><button class="btn-reg">Регистрация</button></li>
+          <li><button class="btn-sign-in">Войти</button></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
