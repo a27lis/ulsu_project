@@ -17,3 +17,7 @@ window.onclick = function (event) {
     }
   }
 };
+
+function myFunction1() {
+  window.onclick = window.open("http://127.0.0.1:5500/src/index.html");
+}

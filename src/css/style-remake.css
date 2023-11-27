@@ -13,6 +13,12 @@
 body {
   margin: 0;
 }
+.menu-item:hover {
+  color: #cd4631;
+}
+.topic-el:hover {
+  color: #cd4631;
+}
 .header {
   background-color: #f7ede8;
   height: 800px;
@@ -153,6 +159,7 @@ hr {
 .stars {
   margin-top: -250px;
   margin-left: 1345px;
+  position: absolute;
 }
 
 .scribble {
@@ -330,6 +337,12 @@ hr {
   display: inline-flex;
   list-style-type: none;
 }
+
+.header-ul {
+  padding: 0px;
+
+  list-style-type: none;
+}
 .link-el {
   margin: 20px;
   transition: 0.7s;
@@ -421,4 +434,165 @@ hr {
 .divider-topic {
   margin-top: 15px;
   color: #4d4d4d;
+}
+.pro {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 84px;
+}
+.your-eng {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 84px;
+  color: #cd4631;
+}
+.header-title {
+  text-align: center;
+  height: 132px;
+  width: 911px;
+  margin-top: -450px;
+  margin-left: 315px;
+  position: absolute;
+}
+
+.title-history {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  color: black;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.sparkle-left {
+  position: absolute;
+  margin-top: -115px;
+  margin-left: 440px;
+}
+.block-about {
+  height: 1414px;
+}
+.info {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.history-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.li-history {
+  width: 570px;
+  margin: 10px;
+}
+.history-hr {
+  margin: 80px 140px 80px 140px;
+  margin-right: 140px;
+  margin-left: 140px;
+}
+.title-f {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  color: black;
+  text-align: center;
+  margin-top: 70px;
+}
+.scribble-blue {
+  position: absolute;
+  right: 0;
+  margin-right: 460px;
+  margin-top: -150px;
+}
+
+.creator-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.card-f {
+  height: 520px;
+  width: 570px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.card-f:hover {
+  transform: scale(1.03);
+}
+.cover-f {
+  height: 488px;
+  width: 259px;
+  margin-left: 8px;
+}
+.card-body-f {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.face {
+  right: 0;
+  top: 0;
+  margin-left: 129px;
+}
+
+.text-name {
+  line-height: 1;
+  margin-top: 170px;
+  font-weight: 700;
+  font-size: 36.65px;
+}
+.card-text-f {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+
+.li-f {
+  margin-left: 20px;
+  margin-right: 16px;
+}
+
+.dark-shadow {
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0);
+}
+
+.topic-info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-topic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 36.65px;
+  width: 686px;
+  margin-bottom: 24px;
+}
+
+.topic-el {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 686px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.ul-topics {
+  list-style-type: none;
+}
+.topics-list {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+}
+.grammar-b {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
 }
