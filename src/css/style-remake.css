@@ -80,6 +80,26 @@ body {
   color: black;
   box-shadow: none;
 }
+.btn-all {
+  margin-left: -40px;
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: #f7ede8;
+  background-color: black;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-all:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
 
 .dropdown {
   position: absolute;
@@ -104,6 +124,10 @@ body {
   border: 1px solid black;
 }
 
+.dropdown-item:hover {
+  transform: scale(1.04);
+}
+
 .dropdown-menu {
   padding: 0px 0px 0px 0px;
   display: block;
@@ -113,6 +137,7 @@ body {
   display: block;
   text-align: center;
   margin-top: 15%;
+  transition: 0.3s;
 }
 hr {
   margin: 0px;
@@ -172,7 +197,7 @@ hr {
 }
 
 .topics {
-  height: 1600px;
+  height: 1350px;
 }
 
 .title-topics {
@@ -194,25 +219,26 @@ hr {
 .sparkle {
   position: absolute;
   right: 0;
-  margin-top: -60px;
-  margin-right: -20px;
+  margin-top: -50px;
+  margin-right: -10px;
 }
-.cards-list {
-  display: flex;
-  justify-content: center;
-}
+
 .card {
   height: 249px;
   width: 570px;
-  padding: 42px 16px 41px 16px;
   border: 2px solid black;
   border-radius: 10px;
+  transition: 1s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 .with-shadow {
   box-shadow: 10px 10px 0px 0px rgba(129, 173, 200);
 }
 .first {
-  margin-left: 130px;
   margin-top: 100px;
 }
 .second {
@@ -220,7 +246,6 @@ hr {
   margin-top: 100px;
 }
 .third {
-  margin-left: 130px;
   margin-top: 20px;
 }
 .four {
@@ -228,7 +253,6 @@ hr {
   margin-left: 20px;
 }
 .five {
-  margin-left: 130px;
   margin-top: 20px;
 }
 .cards-list {
@@ -237,25 +261,164 @@ hr {
   list-style-type: none;
 }
 
+.card-holder {
+  display: flex;
+  justify-content: center;
+}
+
 .all-btn {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-
   margin-bottom: 66px;
+}
+
+.any-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
 }
 
 .links {
   background-color: #f7ede8;
-  height: 1153px;
+  display: block;
+  height: 1100px;
+  padding-top: 140px;
 }
 
 .sсribble-sec {
   position: absolute;
   right: 0;
-  margin-top: -20px;
+  margin-top: -170px;
   margin-right: 350px;
 }
-.links-title {
-  margin-top: 300px;
+
+.title-links {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 59px;
+  color: black;
+  text-align: center;
+}
+.title-links-desc {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 22.65px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-page {
+  height: 202px;
+  width: 373px;
+  border-radius: 0px;
+}
+
+.links-holder {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+.links-holder-sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+.first-row-links {
+  padding: 0px;
+  display: inline-flex;
+  list-style-type: none;
+}
+.link-el {
+  margin: 20px;
+  transition: 0.7s;
+}
+.link-el:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.icon {
+  height: 101px;
+  width: 373px;
+}
+
+.cover {
+  height: 166px;
+  width: 166px;
+  margin-top: 42px;
+  margin-left: 16px;
+}
+.image-cover {
+  border-radius: 8px;
+}
+.topic-text-block {
+  height: 131px;
+  width: 352px;
+
+  border-radius: 0px;
+  margin-left: 20px;
+  margin-top: 59.5px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.text-block {
+  height: 101px;
+  width: 373px;
+  border-radius: 0px;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.link-t {
+  font-size: 22.65px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.grammar {
+  margin-top: 28px;
+  margin-left: 152px;
+}
+.speaking {
+  margin-left: 155px;
+}
+
+.game {
+  margin-left: 158px;
+  margin-top: 21px;
+}
+.times {
+  margin-left: 153px;
+  margin-top: 0px;
+}
+
+.verbs {
+  margin-left: 153.95px;
+  margin-top: 0px;
+}
+
+.theme {
+  font-weight: 700;
+  font-size: 16px;
+  color: #cd4631;
+}
+
+.topic-title {
+  font-weight: 700;
+  font-size: 22.65px;
+  color: #cd4631;
+  margin-top: 4px;
+}
+.some-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4d4d4d;
+  margin-top: 15px;
+  line-height: 160%;
+}
+
+.divider-topic {
+  margin-top: 15px;
+  color: #4d4d4d;
 }
