@@ -125,7 +125,7 @@ body {
   width: 150px;
   margin-top: 35px;
   margin-left: -70px;
-  z-index: 1;
+  z-index: 99;
   border-radius: 8px;
   border: 1px solid black;
 }
@@ -363,6 +363,7 @@ hr {
   margin-top: 42px;
   margin-left: 16px;
 }
+
 .image-cover {
   border-radius: 8px;
 }
@@ -417,6 +418,17 @@ hr {
   color: #cd4631;
 }
 
+.theme-t {
+  font-weight: 700;
+  font-size: 36.65px;
+  color: #cd4631;
+}
+.topic-title-t {
+  font-weight: 700;
+  font-size: 44px;
+
+  margin-top: 4px;
+}
 .topic-title {
   font-weight: 700;
   font-size: 22.65px;
@@ -453,6 +465,21 @@ hr {
   margin-top: -450px;
   margin-left: 315px;
   position: absolute;
+}
+
+.header-lesson {
+  text-align: center;
+  height: 132px;
+  width: 800px;
+  margin-top: -450px;
+  margin-left: 385px;
+  position: absolute;
+}
+
+.lesson-t {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
 }
 
 .title-history {
@@ -595,4 +622,55 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 140px;
+}
+
+.lesson {
+  padding: 100px 330px 100px 330px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.non-m {
+  margin: 0px;
+}
+
+.ul-topic {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li-topic {
+  width: 570px;
+}
+.name-t {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.desc-topic {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4d4d4d;
+  text-align: center;
+}
+.hr-topic {
+  margin-bottom: 20px;
+}
+
+.topic-header-pic-disc {
+  display: flex;
+  justify-content: center;
+  margin-top: -400px;
+}
+
+.topic-full-text {
+  padding: 140px 330px 140px 330px;
+}
+.exersises {
+  height: 1153px;
 }
