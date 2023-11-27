@@ -674,3 +674,18 @@ hr {
 .exersises {
   height: 1153px;
 }
+
+.times-bl {
+  padding: 100px 250px 100px 250px;
+}
+.img-table {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.game-block {
+  height: 400px;
+}
