@@ -669,10 +669,7 @@ hr {
 }
 
 .topic-full-text {
-  padding: 140px 330px 140px 330px;
-}
-.exersises {
-  height: 1153px;
+  padding: 140px 330px 200px 330px;
 }
 
 .times-bl {
@@ -688,4 +685,76 @@ hr {
 
 .game-block {
   height: 400px;
+}
+.scribble-topic {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 335px;
+}
+
+.exersises {
+  height: 1153px;
+  background-color: #f7ede8;
+}
+
+.questions {
+  position: absolute;
+
+  margin-top: 200px;
+  margin-left: 230px;
+}
+.translate {
+  position: absolute;
+  right: 0;
+
+  margin-top: 540px;
+  margin-right: 230px;
+}
+.sparkle-left-t {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 175px;
+}
+
+.sparkle-translate {
+  position: absolute;
+  right: 0;
+  margin-top: 485px;
+  margin-right: 165px;
+}
+.h1-t {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.h1-q {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+.questions-list {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0px;
+  counter-reset: item;
+}
+
+.li-q {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 538px;
+  padding-left: 40px;
+}
+.li-q::before {
+  position: absolute;
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #cd4631;
+  font-weight: 700;
+  margin-left: -40px;
 }
