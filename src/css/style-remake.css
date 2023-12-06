@@ -764,6 +764,12 @@ hr {
   background-color: #f7ede8;
 }
 
+.custom-gallery {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
 .title-gallery {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
@@ -774,21 +780,6 @@ hr {
 }
 
 .slide {
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide-1 {
-  background-color: #4d4d4d;
-}
-.slide-2 {
-  background-color: #cd4631;
-}
-.slide-3 {
-  background-color: rgb(130, 64, 243);
-}
-.slide-4 {
-  background-color: #9b8585;
+  width: 100%;
+  overflow: hidden;
 }

@@ -1,6 +1,7 @@
 const GalleryClassName = "gallery";
 const GalleryDraggableClassName = "gallery-draggable";
 const GalleryLineClassName = "gallery-line";
+GalleryLineContainerClassName = "gallery-line-container";
 const GallerySlideClassName = "gallery-slide";
 const GalleryDotsClassName = "gallery-dots";
 const GalleryDotClassName = "gallery-dot";
@@ -31,6 +32,7 @@ class Gallery {
     this.moveToLeft = this.moveToLeft.bind(this);
     this.moveToRight = this.moveToRight.bind(this);
     this.changeCurrentSlide = this.changeCurrentSlide.bind(this);
+    this.changeActiveDotClass = this.changeActiveDotClass.bind(this);
     this.manageHTML();
     this.setParameters();
     this.setEvents();
@@ -39,9 +41,11 @@ class Gallery {
   manageHTML() {
     this.containerNode.classList.add(GalleryClassName);
     this.containerNode.innerHTML = `
+    <div class="${GalleryLineContainerClassName}">
         <div class="${GalleryLineClassName}">
             ${this.containerNode.innerHTML}
         </div>
+      </div>
 
         <div class="${GalleryNavClassName}">
         <button class="${GalleryNavLeftClassName}">Left</button>
@@ -49,6 +53,10 @@ class Gallery {
         </div>
         <div class="${GalleryDotsClassName}"></div>
     `;
+
+    this.lineContainerNode = this.containerNode.querySelector(
+      `.${GalleryLineContainerClassName}`
+    );
     this.lineNode = this.containerNode.querySelector(
       `.${GalleryLineClassName}`
     );
@@ -81,8 +89,8 @@ class Gallery {
   }
 
   setParameters() {
-    const coordsContainer = this.containerNode.getBoundingClientRect();
-    this.width = coordsContainer.width;
+    const coordsLineContainer = this.lineContainerNode.getBoundingClientRect();
+    this.width = coordsLineContainer.width;
     this.maximumX = -(this.size - 1) * (this.width + this.settings.margin);
     this.x = -this.currentSlide * (this.width + this.settings.margin);
 
@@ -172,9 +180,36 @@ class Gallery {
     }
   }
 
-  clickDots() {}
+  clickDots(evt) {
+    const dotNode = evt.target.closest("button");
+    if (!dotNode) {
+      return;
+    }
 
-  moveToLeft() {}
+    let dotNumber;
+    for (let i = 0; i < this.dotNodes.length; i++) {
+      if (this.dotNodes[i] === dotNode) {
+        dotNumber = i;
+        break;
+      }
+    }
+
+    if (dotNumber === this.currentSlide) {
+      return;
+    }
+
+    const countSwipes = Math.abs(this.currentSlide - dotNumber);
+    this.currentSlide = dotNumber;
+    this.changeCurrentSlide(countSwipes);
+  }
+
+  moveToLeft() {
+    if (this.currentSlide <= 0) {
+      return;
+    }
+    this.currentSlide = this.currentSlide - 1;
+    this.changeCurrentSlide();
+  }
 
   moveToRight() {
     if (this.currentSlide >= this.size - 1) {
@@ -184,18 +219,25 @@ class Gallery {
     this.changeCurrentSlide();
   }
 
-  changeCurrentSlide() {
+  changeCurrentSlide(countSwipes) {
     this.x = -this.currentSlide * (this.width + this.settings.margin);
-    this.setStyleTransition();
+    this.setStyleTransition(countSwipes);
     this.setStylePosition();
+    this.changeActiveDotClass();
+  }
+  changeActiveDotClass() {
+    for (let i = 0; i < this.dotNodes.length; i++) {
+      this.dotNodes[i].classList.remove(GalleryDotActiveClassName);
+    }
+    this.dotNodes[this.currentSlide].classList.add(GalleryDotActiveClassName);
   }
 
   setStylePosition() {
     this.lineNode.style.transform = `translate3d(${this.x}px, 0, 0)`;
   }
 
-  setStyleTransition() {
-    this.lineNode.style.transition = `all 0.25s ease 0s`;
+  setStyleTransition(countSwipes = 1) {
+    this.lineNode.style.transition = `all ${0.25 * countSwipes}s ease 0s`;
   }
   resetStyleTransition() {
     this.lineNode.style.transition = `all 0s ease 0s`;
