@@ -74,17 +74,17 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
-
-.btn-reg:hover {
-  border: 2px solid black;
-  color: #f7ede8;
-  background-color: black;
-}
 .btn-sign-in:hover {
   border: 2px solid black;
   background-color: #f7ede8;
   color: black;
   box-shadow: none;
+}
+
+.btn-reg:hover {
+  border: 2px solid black;
+  color: #f7ede8;
+  background-color: black;
 }
 .btn-all {
   margin-left: -40px;
@@ -782,4 +782,147 @@ hr {
 .slide {
   width: 100%;
   overflow: hidden;
+}
+
+.modalBackground {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* указываем z-индекс для корректного наслаивания */
+  z-index: 1;
+}
+.modalActive {
+  position: absolute;
+  width: 570px;
+  height: 453px;
+  margin-left: -120px;
+  margin-top: 130px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: black solid 2px;
+  cursor: default;
+}
+.modalClose {
+  font-family: var(--font-regular);
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+/* сама картинка кнопочки закрытия */
+.modalClose img {
+  width: 20px;
+  height: 20px;
+}
+.modalWindow {
+  position: relative;
+}
+
+.reg-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.reg-text {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 44px;
+  margin-left: 98px;
+}
+
+input[type="text"] {
+  border: 2px solid black;
+  border-radius: 8px;
+  background: #ffffff !important;
+  outline: none;
+  height: 64px;
+
+  width: 373px;
+  color: black;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  margin-left: 98px;
+  margin-top: 8px;
+}
+
+.btn-modal {
+  margin-left: 174px;
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: #f7ede8;
+  background-color: black;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 44px;
+}
+.btn-upd {
+  font-family: Montserrat Alternates;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 8px;
+  border: 2px solid black;
+  color: #f7ede8;
+  background-color: black;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 16px;
+}
+.btn-upd:hover {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+  box-shadow: none;
+}
+.btn-modal:hover {
+  border: 2px solid black;
+  background-color: #fff;
+  color: black;
+  box-shadow: none;
+}
+.btn-modal-s {
+  margin-left: 233px;
+}
+
+.account {
+  padding-top: 45px;
+}
+.ava {
+  display: flex;
+  justify-content: center;
+}
+
+.account-info {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px 40px;
+  margin-top: 9px;
+}
+.row {
+  margin: 0 auto;
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+.acc {
+  margin: 0;
 }
