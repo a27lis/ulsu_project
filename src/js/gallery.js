@@ -9,6 +9,7 @@ const GalleryDotActiveClassName = "gallery-dot-active";
 const GalleryNavClassName = "gallery-nav";
 const GalleryNavLeftClassName = "gallery-nav-left";
 const GalleryNavRightClassName = "gallery-nav-right";
+const GalleryNavDisableClassName = "gallery-nav-disable";
 
 class Gallery {
   constructor(element, options = {}) {
@@ -33,6 +34,7 @@ class Gallery {
     this.moveToRight = this.moveToRight.bind(this);
     this.changeCurrentSlide = this.changeCurrentSlide.bind(this);
     this.changeActiveDotClass = this.changeActiveDotClass.bind(this);
+    this.changeDisableNav = this.changeDisableNav.bind(this);
     this.manageHTML();
     this.setParameters();
     this.setEvents();
@@ -95,10 +97,13 @@ class Gallery {
     this.x = -this.currentSlide * (this.width + this.settings.margin);
 
     this.resetStyleTransition();
+
     this.lineNode.style.width = `${
       this.size * (this.width + this.settings.margin)
     }px`;
     this.setStylePosition();
+    this.changeActiveDotClass();
+    this.changeDisableNav();
     Array.from(this.slideNotes).forEach((slideNote) => {
       slideNote.style.width = `${this.width}px`;
       slideNote.style.marginRight = `${this.settings.margin}px`;
@@ -224,12 +229,27 @@ class Gallery {
     this.setStyleTransition(countSwipes);
     this.setStylePosition();
     this.changeActiveDotClass();
+    this.changeDisableNav();
   }
   changeActiveDotClass() {
     for (let i = 0; i < this.dotNodes.length; i++) {
       this.dotNodes[i].classList.remove(GalleryDotActiveClassName);
     }
     this.dotNodes[this.currentSlide].classList.add(GalleryDotActiveClassName);
+  }
+
+  changeDisableNav() {
+    if (this.currentSlide <= 0) {
+      this.navLeft.classList.add(GalleryNavDisableClassName);
+    } else {
+      this.navLeft.classList.remove(GalleryNavDisableClassName);
+    }
+
+    if (this.currentSlide >= this.size - 1) {
+      this.navRight.classList.add(GalleryNavDisableClassName);
+    } else {
+      this.navRight.classList.remove(GalleryNavDisableClassName);
+    }
   }
 
   setStylePosition() {

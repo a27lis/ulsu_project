@@ -9,6 +9,36 @@
   </head>
   <body>
     <div class="header">
+      <div class="modalBackground">
+        <div class="modalActive">
+          <div class="modalClose">
+            <img src="icons/ic-cross.svg" />
+          </div>
+          <div class="modalWindow">
+            <div class="reg-title">Регистрация</div>
+            <div class="reg-text">Email</div>
+            <input type="text" />
+            <div class="reg-text" style="margin-top: 14px">Пароль</div>
+            <input type="text" />
+            <button class="btn-modal">Зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+      <div class="modalBackgroundS modalBackground">
+        <div class="modalActiveS modalActive">
+          <div class="modalCloseS modalClose">
+            <img src="icons/ic-cross.svg" />
+          </div>
+          <div class="modalWindowS modalWindow">
+            <div class="reg-title">Войти</div>
+            <div class="reg-text">Email</div>
+            <input type="text" />
+            <div class="reg-text" style="margin-top: 14px">Пароль</div>
+            <input type="text" />
+            <button class="btn-modal btn-modal-s">Войти</button>
+          </div>
+        </div>
+      </div>
       <div class="navigation">
         <div class="logo">
           <img src="img/logo.svg" alt="logo" />
@@ -119,5 +149,6 @@
       </div>
     </div>
     <script src="js/menu.js"></script>
+    <script src="js/reg.js"></script>
   </body>
 </html>

@@ -21,3 +21,12 @@ window.onclick = function (event) {
 function myFunction1() {
   window.onclick = window.open("http://127.0.0.1:5500/src/index.html");
 }
+
+var urls = ["game.html", "grammar.html", "times.html", "speaking.html"];
+
+function openRandomUrl() {
+  // Выбираем случайный индекс из массива:
+  var i = Math.floor(Math.random() * urls.length);
+  // Перенаправляем браузер на выбранный URL:
+  window.location = urls[i];
+}

@@ -8,6 +8,36 @@
     <link rel="stylesheet" href="css/style-remake.css" />
   </head>
   <body>
+    <div class="modalBackground">
+      <div class="modalActive">
+        <div class="modalClose">
+          <img src="icons/ic-cross.svg" />
+        </div>
+        <div class="modalWindow">
+          <div class="reg-title">Регистрация</div>
+          <div class="reg-text">Email</div>
+          <input type="text" />
+          <div class="reg-text" style="margin-top: 14px">Пароль</div>
+          <input type="text" />
+          <button class="btn-modal">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+    <div class="modalBackgroundS modalBackground">
+      <div class="modalActiveS modalActive">
+        <div class="modalCloseS modalClose">
+          <img src="icons/ic-cross.svg" />
+        </div>
+        <div class="modalWindowS modalWindow">
+          <div class="reg-title">Войти</div>
+          <div class="reg-text">Email</div>
+          <input type="text" />
+          <div class="reg-text" style="margin-top: 14px">Пароль</div>
+          <input type="text" />
+          <button class="btn-modal btn-modal-s">Войти</button>
+        </div>
+      </div>
+    </div>
     <div class="header">
       <div class="navigation">
         <div class="logo">
@@ -86,35 +116,55 @@
               Тема 1. The United Kingdom of Great Britain and Nothern Ireland
             </div>
             <div class="topic-el">
-              <a class="menu-item" href="index.html">
+              <a class="menu-item" href="topic1.html">
                 The United Kingdom - Соединенное Королевство
               </a>
             </div>
             <div class="topic-el">
-              UK Political System - Политическая система Соединенного
-              Королевства
+              <a class="menu-item" href="topic2.html">
+                UK Political System - Политическая система Соединенного
+                Королевства
+              </a>
             </div>
-            <div class="topic-el">London - Лондон</div>
+            <div class="topic-el">
+              <a class="menu-item" href="topic3.html">London - Лондон </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="topic-info">
             <div class="title-topic">Тема 2. The United States of America</div>
             <div class="topic-el">
-              The United States of America - Соединённые Штаты Америки
+              <a class="menu-item" href="topic4.html">
+                The United States of America - Соединённые Штаты Америки
+              </a>
             </div>
-            <div class="topic-el">US Government - Правительство США</div>
-            <div class="topic-el">Washington, D.C. - Вашингтон</div>
+            <div class="topic-el">
+              <a class="menu-item" href="topic5.html">
+                US Government - Правительство США
+              </a>
+            </div>
+            <div class="topic-el">
+              <a class="menu-item" href="topic6.html">
+                Washington, D.C. - Вашингтон
+              </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="topic-info">
             <div class="title-topic">Тема 3. Russia</div>
-            <div class="topic-el">Russia - Россия</div>
             <div class="topic-el">
-              State System of Russia - Государственная система России
+              <a class="menu-item" href="topic7.html"> Russia - Россия </a>
             </div>
-            <div class="topic-el">Moscow - Москва</div>
+            <div class="topic-el">
+              <a class="menu-item" href="topic8.html">
+                State System of Russia - Государственная система России
+              </a>
+            </div>
+            <div class="topic-el">
+              <a class="menu-item" href="topic9.html"> Moscow - Москва </a>
+            </div>
           </div>
         </li>
       </ul>
@@ -162,5 +212,6 @@
       </div>
     </div>
     <script src="js/menu.js"></script>
+    <script src="js/reg.js"></script>
   </body>
 </html>
