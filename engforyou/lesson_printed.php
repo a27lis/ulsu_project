@@ -21,7 +21,7 @@
           <img src="img/shape-swirl.svg" alt="" />
         </div>
         <div class="header-lesson" style="margin-top: -390px">
-          <div class="lesson-t">Урок грамматики 1 Present Continuous</div>
+          <div class="lesson-t"><?=$elementInfo['title'] . " " . $elementInfo['subtitle']?></div>
         </div>
         <div class="stars" style="margin-top: -440px">
           <img src="img/shape-stars.svg" alt="" />
@@ -30,35 +30,8 @@
     </div>
 
     <div class="lesson">
-      <p class="lesson-text">Изучите следующую ситуацию:</p>
-      <p class="lesson-text">
-        Sarah is in her car. She is on her way to work. She is driving to work.
-        – Она едет на работу. Это означает: она ведёт машину сейчас, в момент
-        речи. Действие не завершено. Am/is/are + -ing это the present
-        continuous.
-      </p>
-      <p class="lesson-text">
-        I am doing something = Я делаю что-либо = Я в процессе работы над этим
-        (в процессе ‘делания’), т.е. я начал делать это, но еще не закончил
-      </p>
-
-      <p class="lesson-text">
-        Действие не обязательно происходит в момент речи. Например: Стив говорит
-        (is talking) с другом по телефону. Он говорит: I’m reading a really good
-        book at the moment. It’s about a man who ... Я сейчас читаю очень
-        интересную книгу. Она о мужчине, который...
-      </p>
-      <p class="lesson-text">
-        Стив не читает (is not reading) книгу в момент речи. Он имеет в виду,
-        что он начал читать ее, но еще не закончил. Он в процессе чтения этой
-        книги.
-      </p>
-      <p class="lesson-text">
-        Мы можем использовать present continuous со словами today / this week /
-        this year и другими словами, означающими промежутки времени, связанными
-        с текущим промежутком времени (сейчас), т.е. сегодня это сейчас, эта
-        неделя - она идет сейчас и т.п
-      </p>
+      <p class="lesson-text"><?=$elementInfo['article']?></p>
+      
     </div>
     <div class="footer">
       <div class="logo-year">
