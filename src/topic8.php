@@ -4,96 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Текст</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style-remake.css" />
   </head>
   <body>
-    <div class="modalBackground">
-      <div class="modalActive">
-        <div class="modalClose">
-          <img src="icons/ic-cross.svg" />
-        </div>
-        <div class="modalWindow">
-          <div class="reg-title">Регистрация</div>
-          <div class="reg-text">Email</div>
-          <input type="text" />
-          <div class="reg-text" style="margin-top: 14px">Пароль</div>
-          <input type="text" />
-          <button class="btn-modal">Зарегистрироваться</button>
-        </div>
-      </div>
-    </div>
-    <div class="modalBackgroundS modalBackground">
-      <div class="modalActiveS modalActive">
-        <div class="modalCloseS modalClose">
-          <img src="icons/ic-cross.svg" />
-        </div>
-        <div class="modalWindowS modalWindow">
-          <div class="reg-title">Войти</div>
-          <div class="reg-text">Email</div>
-          <input type="text" />
-          <div class="reg-text" style="margin-top: 14px">Пароль</div>
-          <input type="text" />
-          <button class="btn-modal btn-modal-s">Войти</button>
-        </div>
-      </div>
-    </div>
     <div class="header">
-      <div class="navigation">
-        <div class="logo">
-          <img src="img/logo.svg" alt="logo" />
-        </div>
-        <ul class="menu">
-          <li><a class="menu-item" href="index.html">Главная</a></li>
-
-          <li><a class="menu-item" href="about.html">О нас</a></li>
-          <li>
-            <a class="menu-item lessons" style="cursor: default">Уроки</a>
-          </li>
-          <li>
-            <div class="dropdown">
-              <img
-                class="arrow-down"
-                src="icons/ic-arrow-down.svg"
-                alt="arrow"
-                onclick="myFunction()"
-              />
-              <div id="dropdown-content" class="dropdown-content">
-                <ul class="dropdown-menu">
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="topics.html"
-                      >Тексты</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="grammar.html"
-                      >Грамматика</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="speaking.html"
-                      >Говорение</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="game.html">Игра</a>
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="times.html"
-                      >Времена</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li><button class="btn-reg">Регистрация</button></li>
-          <li><button class="btn-sign-in">Войти</button></li>
-        </ul>
-      </div>
+      <?
+        include 'navigation.php'
+      ?>
       <div class="brand">
         <div class="swirl">
           <img src="img/shape-swirl.svg" alt="" />
@@ -202,28 +123,28 @@
       <div class="footer-nav">
         <ul class="first-col">
           <li class="footer-item">
-            <a class="menu-item" href="about.html">О нас</a>
+            <a class="menu-item" href="about.php">О нас</a>
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="grammar.html" style="color: #cd4631"
+            <a class="menu-item" href="grammar.php" style="color: #cd4631"
               >Грамматика</a
             >
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="speaking.html">Говорение</a>
+            <a class="menu-item" href="speaking.php">Говорение</a>
           </li>
         </ul>
         <ul class="second-col">
           <li class="footer-item">
-            <a class="menu-item" href="topics.html" style="color: #cd4631"
+            <a class="menu-item" href="topics.php" style="color: #cd4631"
               >Тексты</a
             >
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="times.html">Времена</a>
+            <a class="menu-item" href="times.php">Времена</a>
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="game.html" style="color: #cd4631"
+            <a class="menu-item" href="game.php" style="color: #cd4631"
               >Игра</a
             >
           </li>

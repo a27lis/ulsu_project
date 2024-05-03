@@ -4,97 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style-remake.css" />
   </head>
   <body>
-    <div class="modalBackground">
-      <div class="modalActive">
-        <div class="modalClose">
-          <img src="icons/ic-cross.svg" />
-        </div>
-        <div class="modalWindow">
-          <div class="reg-title">Регистрация</div>
-          <div class="reg-text">Email</div>
-          <input type="text" />
-          <div class="reg-text" style="margin-top: 14px">Пароль</div>
-          <input type="text" />
-          <button class="btn-modal">Зарегистрироваться</button>
-        </div>
-      </div>
-    </div>
-    <div class="modalBackgroundS modalBackground">
-      <div class="modalActiveS modalActive">
-        <div class="modalCloseS modalClose">
-          <img src="icons/ic-cross.svg" />
-        </div>
-        <div class="modalWindowS modalWindow">
-          <div class="reg-title">Войти</div>
-          <div class="reg-text">Email</div>
-          <input type="text" />
-          <div class="reg-text" style="margin-top: 14px">Пароль</div>
-          <input type="text" />
-          <button class="btn-modal btn-modal-s">Войти</button>
-        </div>
-      </div>
-    </div>
     <div class="header">
-      <div class="navigation">
-        <div class="logo">
-          <img src="img/logo.svg" alt="logo" />
-        </div>
-        <ul class="menu">
-          <li><a class="menu-item" href="index.html">Главная</a></li>
+      
+      <?
+        include 'navigation.php'
+      ?>
 
-          <li><a class="menu-item" href="about.html">О нас</a></li>
-          <li>
-            <a class="menu-item lessons" style="cursor: default">Уроки</a>
-          </li>
-          <li>
-            <div class="dropdown">
-              <img
-                class="arrow-down"
-                src="icons/ic-arrow-down.svg"
-                alt="arrow"
-                onclick="myFunction()"
-              />
-              <div id="dropdown-content" class="dropdown-content">
-                <ul class="dropdown-menu">
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="topics.html"
-                      >Тексты</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="grammar.html"
-                      >Грамматика</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="speaking.html"
-                      >Говорение</a
-                    >
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="game.html">Игра</a>
-                  </li>
-                  <hr />
-                  <li class="dr-li">
-                    <a class="menu-item dropdown-item" href="times.html"
-                      >Времена</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li><button class="btn-reg">Регистрация</button></li>
-          <li><button class="btn-sign-in">Войти</button></li>
-        </ul>
-      </div>
       <div class="brand">
         <div class="swirl">
           <img src="img/shape-swirl.svg" alt="" />
@@ -125,7 +48,7 @@
           <li>
             <div
               class="card with-shadow first"
-              onClick="window.location.href='topic1.html'"
+              onClick="window.location.href='topic1.php'"
             >
               <ul class="first-row-links">
                 <li>
@@ -149,7 +72,7 @@
 
             <div
               class="card third"
-              onClick="window.location.href='topic9.html'"
+              onClick="window.location.href='topic9.php'"
             >
               <ul class="first-row-links">
                 <li>
@@ -172,7 +95,7 @@
             </div>
             <div
               class="card with-shadow five"
-              onClick="window.location.href='topic5.html'"
+              onClick="window.location.href='topic5.php'"
             >
               <ul class="first-row-links">
                 <li>
@@ -196,7 +119,7 @@
           <li>
             <div
               class="card second"
-              onClick="window.location.href='topic6.html'"
+              onClick="window.location.href='topic6.php'"
             >
               <ul class="first-row-links">
                 <li>
@@ -222,7 +145,7 @@
 
             <div
               class="card four with-shadow"
-              onClick="window.location.href='topic2.html'"
+              onClick="window.location.href='topic2.php'"
             >
               <ul class="first-row-links">
                 <li>
@@ -243,7 +166,7 @@
                 </li>
               </ul>
             </div>
-            <div class="card four" onClick="window.location.href='topic4.html'">
+            <div class="card four" onClick="window.location.href='topic4.php'">
               <ul class="first-row-links">
                 <li>
                   <div class="cover">
@@ -267,8 +190,8 @@
         </ul>
       </div>
       <div class="all-btn">
-        <form action="topics.html">
-          <button class="btn-all" href="topics.html" style="margin-left: 0px">
+        <form action="topics.php">
+          <button class="btn-all" href="topics.php" style="margin-left: 0px">
             Посмотреть все тексты
           </button>
         </form>
@@ -290,7 +213,7 @@
 
       <div class="links-holder">
         <ul class="first-row-links">
-          <li class="link-el" onClick="window.location.href='grammar.html'">
+          <li class="link-el" onClick="window.location.href='grammar.php'">
             <div class="link-page">
               <div class="icon">
                 <img class="grammar" src="icons/ic-grammar.svg" alt="" />
@@ -303,7 +226,7 @@
               </div>
             </div>
           </li>
-          <li class="link-el" onClick="window.location.href='speaking.html'">
+          <li class="link-el" onClick="window.location.href='speaking.php'">
             <div class="link-page">
               <div class="icon">
                 <img class="speaking" src="icons/ic-speaking.svg" alt="" />
@@ -316,7 +239,7 @@
               </div>
             </div>
           </li>
-          <li class="link-el" onClick="window.location.href='game.html'">
+          <li class="link-el" onClick="window.location.href='game.php'">
             <div class="link-page">
               <div class="icon">
                 <img class="game" src="icons/ic-game.svg" alt="" />
@@ -333,7 +256,7 @@
       </div>
       <div class="links-holder-sec">
         <ul class="first-row-links">
-          <li class="link-el" onClick="window.location.href='times.html'">
+          <li class="link-el" onClick="window.location.href='times.php'">
             <div class="link-page">
               <div class="icon">
                 <img class="times" src="icons/ic-times.svg" alt="" />
@@ -346,7 +269,7 @@
               </div>
             </div>
           </li>
-          <li class="link-el" onClick="window.location.href='topics.html'">
+          <li class="link-el" onClick="window.location.href='topics.php'">
             <div class="link-page">
               <div class="icon">
                 <img class="verbs" src="icons/ic-verbs.svg" alt="" />
@@ -378,28 +301,28 @@
       <div class="footer-nav">
         <ul class="first-col">
           <li class="footer-item">
-            <a class="menu-item" href="about.html">О нас</a>
+            <a class="menu-item" href="about.php">О нас</a>
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="grammar.html" style="color: #cd4631"
+            <a class="menu-item" href="grammar.php" style="color: #cd4631"
               >Грамматика</a
             >
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="speaking.html">Говорение</a>
+            <a class="menu-item" href="speaking.php">Говорение</a>
           </li>
         </ul>
         <ul class="second-col">
           <li class="footer-item">
-            <a class="menu-item" href="topics.html" style="color: #cd4631"
+            <a class="menu-item" href="topics.php" style="color: #cd4631"
               >Тексты</a
             >
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="times.html">Времена</a>
+            <a class="menu-item" href="times.php">Времена</a>
           </li>
           <li class="footer-item">
-            <a class="menu-item" href="game.html" style="color: #cd4631"
+            <a class="menu-item" href="game.php" style="color: #cd4631"
               >Игра</a
             >
           </li>

@@ -15,8 +15,7 @@ const modalActive = document.getElementsByClassName("modalActive")[0];
 const modalBackgroundS = document.getElementsByClassName("modalBackgroundS")[0];
 const modalCloseS = document.getElementsByClassName("modalCloseS")[0];
 const modalActiveS = document.getElementsByClassName("modalActiveS")[0];
-const ModalBtn = document.getElementsByClassName("btn-modal")[0];
-const ModalBtnS = document.getElementsByClassName("btn-modal-s")[0];
+
 // функция для корректировки положения body при появлении ползунка прокрутки
 function bodyMargin() {
   bodyElementHTML.style.marginRight = "-" + scrollbarWidth + "px";
@@ -64,20 +63,7 @@ modalCloseS.addEventListener("click", function () {
   }
 });
 
-ModalBtn.addEventListener("click", function () {
-  modalBackground.style.display = "none";
 
-  if (windowInnerWidth >= 1366) {
-    bodyMargin();
-  }
-});
-ModalBtnS.addEventListener("click", function () {
-  modalBackgroundS.style.display = "none";
-
-  if (windowInnerWidth >= 1366) {
-    bodyMargin();
-  }
-});
 
 // закрытие модального окна на зону вне окна, т.е. на фон
 modalBackground.addEventListener("click", function (event) {
