@@ -48,7 +48,7 @@
           <li>
             <div
               class="card with-shadow first"
-              onClick="window.location.href='topic1.php'"
+              onclick="window.location.href = 'topic.php?paramId=1'"
             >
               <ul class="first-row-links">
                 <li>
@@ -72,7 +72,7 @@
 
             <div
               class="card third"
-              onClick="window.location.href='topic9.php'"
+              onclick="window.location.href = 'topic.php?paramId=9'"
             >
               <ul class="first-row-links">
                 <li>
@@ -95,7 +95,7 @@
             </div>
             <div
               class="card with-shadow five"
-              onClick="window.location.href='topic5.php'"
+              onclick="window.location.href = 'topic.php?paramId=5'"
             >
               <ul class="first-row-links">
                 <li>
@@ -119,7 +119,7 @@
           <li>
             <div
               class="card second"
-              onClick="window.location.href='topic6.php'"
+              onclick="window.location.href = 'topic.php?paramId=6'"
             >
               <ul class="first-row-links">
                 <li>
@@ -145,7 +145,7 @@
 
             <div
               class="card four with-shadow"
-              onClick="window.location.href='topic2.php'"
+              onclick="window.location.href = 'topic.php?paramId=2'"
             >
               <ul class="first-row-links">
                 <li>
@@ -166,7 +166,7 @@
                 </li>
               </ul>
             </div>
-            <div class="card four" onClick="window.location.href='topic4.php'">
+            <div class="card four" onclick="window.location.href = 'topic.php?paramId=4'">
               <ul class="first-row-links">
                 <li>
                   <div class="cover">
