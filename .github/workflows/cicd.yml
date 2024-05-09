@@ -1,16 +1,14 @@
 name: CICD
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: checkout
+      uses: actions/checkout@v4
+    
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3
@@ -19,8 +17,9 @@ jobs:
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
-
+    
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+    
     - name: Run test suite
-      run: composer run-script test
+        run: composer run-script test
