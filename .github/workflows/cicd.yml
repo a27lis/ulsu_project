@@ -3,18 +3,12 @@ name: CICD
 on: [push, pull_request]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
       uses: actions/checkout@v4
-
-  cache: 
-    needs: build
-    runs-on: ubuntu-latest 
-    steps:
-      - uses: actions/checkout@v4
-      - name: Cache Composer packages
+    - name: Cache Composer packages
         id: composer-cache
         uses: actions/cache@v4
         with:
@@ -22,17 +16,8 @@ jobs:
           key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
             ${{ runner.os }}-php-
-  dependencies:
-    needs: cache
-    runs-on: ubuntu-latest 
-    steps: 
-      - uses: actions/checkout@v4
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
-  test: 
-    needs: dependencies
-    runs-on: ubuntu-latest 
-    steps:
-      - uses: actions/checkout@v4
       - name: Run test suite
         run: composer run-script test
+      
