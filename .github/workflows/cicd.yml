@@ -13,6 +13,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest 
     steps:
+      - uses: actions/checkout@v4
       - name: Cache Composer packages
         id: composer-cache
         uses: actions/cache@v3
@@ -25,11 +26,13 @@ jobs:
     needs: cache
     runs-on: ubuntu-latest 
     steps: 
+      - uses: actions/checkout@v4
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
   test: 
     needs: dependencies
     runs-on: ubuntu-latest 
     steps:
+      - uses: actions/checkout@v4
       - name: Run test suite
         run: composer run-script test
