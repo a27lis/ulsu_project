@@ -24,7 +24,7 @@
         </div>
         <div class="header-title">
           <ul class="header-ul">
-            <li><div class="pro">Мой</div></li>
+            <li><div class="pro">Твой</div></li>
             <li><div class="your-eng">Английский</div></li>
           </ul>
         </div>
