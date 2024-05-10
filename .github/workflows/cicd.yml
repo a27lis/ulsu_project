@@ -13,5 +13,7 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     - name: Run test
-      run: composer run-script test
-#chmod +x vendor/bin/phpunit
+      run: | 
+        chmod +x vendor/bin/phpunit
+        composer run-script test
+      
