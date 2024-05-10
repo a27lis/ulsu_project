@@ -30,7 +30,6 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd anastmp0.beget.tech/public_html
-            ls -la
             git pull origin main
             systemctl restart ngnix
       
