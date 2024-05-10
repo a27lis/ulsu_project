@@ -22,8 +22,11 @@
         <div class="swirl">
           <img src="img/shape-swirl.svg" alt="" />
         </div>
-        <div class="slogan">
-          <img src="img/slogan.svg" alt="" />
+        <div class="header-title">
+          <ul class="header-ul">
+            <li><div class="pro">Про</div></li>
+            <li><div class="your-eng">Твой Английский</div></li>
+          </ul>
         </div>
         <div class="stars">
           <img src="img/shape-stars.svg" alt="" />
