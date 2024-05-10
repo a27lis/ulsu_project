@@ -1,1 +1,1 @@
-{"version":1,"defects":{"PdoConnectTest::testGetInstance":4},"times":{"PdoConnectTest::testGetInstance":0.007}}
+{"version":1,"defects":{"PdoConnectTest::testGetInstance":4,"GalleryTest::testInitialization":4,"GalleryTest::testNavigation":4,"Warning":6,"GalleryTest::testAddition":4},"times":{"PdoConnectTest::testGetInstance":0.007,"GalleryTest::testInitialization":0.003,"GalleryTest::testNavigation":0,"Warning":0.003,"GalleryTest::testAddition":0.003}}
