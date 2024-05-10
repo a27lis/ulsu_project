@@ -2,9 +2,9 @@
 
 class PdoConnect {
 	private const HOST = 'localhost';
-	private const DB = 'engforyou';
-	private const USER = 'a27lis';
-	private const PASS = '15342679';
+	private const DB = 'anastmp0_engforu';
+	private const USER = 'anastmp0_engforu';
+	private const PASS = '15342679Q_';
 	private const CHARSET = 'utf8';
 
 	protected static $_instance;
