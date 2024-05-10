@@ -18,22 +18,19 @@
         include 'navigation.php'
       ?>
 
-      <div class="brand">
+<div class="brand">
         <div class="swirl">
           <img src="img/shape-swirl.svg" alt="" />
         </div>
         <div class="header-title">
           <ul class="header-ul">
-            <li><div class="pro">Про</div></li>
-            <li><div class="your-eng">Твой Английский</div></li>
+            <li><div class="pro">Твой</div></li>
+            <li><div class="your-eng">Английский</div></li>
           </ul>
         </div>
-        <div class="stars">
+        <div class="stars" style="margin-top: -440px">
           <img src="img/shape-stars.svg" alt="" />
         </div>
-      </div>
-      <div class="scribble">
-        <img src="img/scribble.svg" alt="" />
       </div>
     </div>
 
