@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: Get repository code 
       uses: actions/checkout@v4
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict  
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     - name: Run test
-      run: | 
-        chmod +x vendor/bin/phpunit
-        composer run-script test
-      
+      run: composer run-script test
+#chmod +x vendor/bin/phpunit
