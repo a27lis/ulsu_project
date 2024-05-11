@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="header">
-    <?
+    <?php
         include 'navigation.php'
       ?>
       <div class="brand">

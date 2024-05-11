@@ -1,7 +1,7 @@
 <div class="modalBackground">
     <div class="modalActive">
     <div class="modalClose">
-        <img src="icons/ic-cross.svg" />
+        <img src="ic/ic-cross.svg" />
     </div>
     <div class="modalWindow">
         <div class="reg-title">Регистрация</div>
@@ -16,7 +16,7 @@
 <div class="modalBackgroundS modalBackground">
     <div class="modalActiveS modalActive">
     <div class="modalCloseS modalClose">
-        <img src="icons/ic-cross.svg" />
+        <img src="ic/ic-cross.svg" />
     </div>
     <div class="modalWindowS modalWindow">
         <div class="reg-title">Войти</div>
@@ -45,7 +45,7 @@
         <div class="dropdown">
             <img
             class="arrow-down"
-            src="icons/ic-arrow-down.svg"
+            src="ic/ic-arrow-down.svg"
             alt="arrow"
             onclick="myFunction()"
             />
@@ -82,7 +82,7 @@
             </div>
         </div>
         </li>
-        <?
+        <?php
             if($_COOKIE['email']){
                 echo "<li><button class='btn-sign-in' style='margin-left: 480px;' id='btn-go-out'>Выйти</button></li>";
             } else {

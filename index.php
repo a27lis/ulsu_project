@@ -14,7 +14,7 @@
   <body>
     <div class="header">
       
-      <?
+      <?php
         include 'navigation.php'
       ?>
 
@@ -216,7 +216,7 @@
           <li class="link-el" onClick="window.location.href='grammar.php'">
             <div class="link-page">
               <div class="icon">
-                <img class="grammar" src="icons/ic-grammar.svg" alt="" />
+                <img class="grammar" src="ic/ic-grammar.svg" alt="" />
               </div>
               <div class="text-block">
                 <div class="link-t">Грамматика</div>
@@ -229,7 +229,7 @@
           <li class="link-el" onClick="window.location.href='speaking.php'">
             <div class="link-page">
               <div class="icon">
-                <img class="speaking" src="icons/ic-speaking.svg" alt="" />
+                <img class="speaking" src="ic/ic-speaking.svg" alt="" />
               </div>
               <div class="text-block">
                 <div class="link-t">Говорение</div>
@@ -242,7 +242,7 @@
           <li class="link-el" onClick="window.location.href='game.php'">
             <div class="link-page">
               <div class="icon">
-                <img class="game" src="icons/ic-game.svg" alt="" />
+                <img class="game" src="ic/ic-game.svg" alt="" />
               </div>
               <div class="text-block">
                 <div class="link-t">Игра</div>
@@ -259,7 +259,7 @@
           <li class="link-el" onClick="window.location.href='times.php'">
             <div class="link-page">
               <div class="icon">
-                <img class="times" src="icons/ic-times.svg" alt="" />
+                <img class="times" src="ic/ic-times.svg" alt="" />
               </div>
               <div class="text-block">
                 <div class="link-t">Времена глагола</div>
@@ -272,7 +272,7 @@
           <li class="link-el" onClick="window.location.href='topics.php'">
             <div class="link-page">
               <div class="icon">
-                <img class="verbs" src="icons/ic-verbs.svg" alt="" />
+                <img class="verbs" src="ic/ic-verbs.svg" alt="" />
               </div>
               <div class="text-block">
                 <div class="link-t">Тексты</div>
