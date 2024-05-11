@@ -37,7 +37,7 @@
             <?=$lesson['title'] . ". " . $lesson['subtitle']?>
           </a>
         </div>
-        <?endforeach?>
+        <?php endforeach?>
       </div>
     </div>
     <div class="scribble" style="margin-top: 122px">

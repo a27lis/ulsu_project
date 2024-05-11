@@ -42,7 +42,7 @@
               <? echo ($topic['theme'] === "Тема 1. The United Kingdom of Great Britain and Nothern Ireland") ? $topic['title'] : ""; ?>
               </a>
             </div>
-            <?endforeach?>
+            <?php endforeach?>
           </div>
         </li>
         <li>
@@ -54,7 +54,7 @@
               <? echo ($topic['theme'] === "Тема 2. The United States of America") ? $topic['title'] : ""; ?>
               </a>
             </div>
-            <?endforeach?>
+            <?php endforeach?>
           </div>
         </li>
         <li>
@@ -66,7 +66,7 @@
               <? echo ($topic['theme'] === "Тема 3. Russia") ? $topic['title'] : ""; ?>
               </a>
             </div>
-            <?endforeach?>
+            <?php endforeach?>
           </div>
         </li>
       </ul>
