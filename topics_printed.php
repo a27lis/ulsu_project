@@ -39,7 +39,7 @@
             <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
-              <? echo ($topic['theme'] === "Тема 1. The United Kingdom of Great Britain and Nothern Ireland") ? $topic['title'] : ""; ?>
+              <?php echo ($topic['theme'] === "Тема 1. The United Kingdom of Great Britain and Nothern Ireland") ? $topic['title'] : ""; ?>
               </a>
             </div>
             <?php endforeach?>
@@ -51,7 +51,7 @@
             <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
-              <? echo ($topic['theme'] === "Тема 2. The United States of America") ? $topic['title'] : ""; ?>
+              <?php echo ($topic['theme'] === "Тема 2. The United States of America") ? $topic['title'] : ""; ?>
               </a>
             </div>
             <?php endforeach?>
@@ -63,7 +63,7 @@
             <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
-              <? echo ($topic['theme'] === "Тема 3. Russia") ? $topic['title'] : ""; ?>
+              <?php echo ($topic['theme'] === "Тема 3. Russia") ? $topic['title'] : ""; ?>
               </a>
             </div>
             <?php endforeach?>
