@@ -31,7 +31,7 @@
 
     <div class="grammar-b">
       <div class="topic-info">
-        <?foreach ($lessons as $lesson):?>
+        <?php foreach ($lessons as $lesson):?>
         <div class="topic-el">
           <a class="menu-item" onclick="window.location.href = 'lesson.php?paramId=<?=$lesson['id']?>'">
             <?=$lesson['title'] . ". " . $lesson['subtitle']?>

@@ -36,7 +36,7 @@
             <div class="title-topic">
               Тема 1. The United Kingdom of Great Britain and Nothern Ireland
             </div>
-            <?foreach ($topics as $topic):?>
+            <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
               <? echo ($topic['theme'] === "Тема 1. The United Kingdom of Great Britain and Nothern Ireland") ? $topic['title'] : ""; ?>
@@ -48,7 +48,7 @@
         <li>
           <div class="topic-info">
             <div class="title-topic">Тема 2. The United States of America</div>
-            <?foreach ($topics as $topic):?>
+            <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
               <? echo ($topic['theme'] === "Тема 2. The United States of America") ? $topic['title'] : ""; ?>
@@ -60,7 +60,7 @@
         <li>
           <div class="topic-info">
             <div class="title-topic">Тема 3. Russia</div>
-            <?foreach ($topics as $topic):?>
+            <?php foreach ($topics as $topic):?>
             <div class="topic-el">
               <a class="menu-item" onclick="window.location.href = 'topic.php?paramId=<?=$topic['id']?>'">
               <? echo ($topic['theme'] === "Тема 3. Russia") ? $topic['title'] : ""; ?>
