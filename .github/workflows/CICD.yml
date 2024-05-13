@@ -1,6 +1,9 @@
 name: CICD
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-test:
